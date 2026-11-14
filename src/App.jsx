@@ -8,13 +8,13 @@ import Single from './views/Single';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/~maisali/wsk-routing">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="Profile" element={<Profile/>} />
-          <Route path="Upload" element={<Upload/>} />
-          <Route path="Single" element={<Single/>} />
+          <Route path="Profile" element={<Profile />} />
+          <Route path="Upload" element={<Upload />} />
+          <Route path="Single" element={<Single />} />
           {/* TODO: add missing routes */}
         </Route>
       </Routes>
