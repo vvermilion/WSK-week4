@@ -1,14 +1,12 @@
 import './App.css';
+import Home from './views/Home';
 
- import Home from './components/Home';
+const App = () => {
+  return (
+    <>
+      <Home />
+    </>
+  );
+};
 
-
- const App = () => {
-   return (
-     <>
-       <h1>My App</h1>
-       <Home />
-     </>
-   );
- };
- export default App;
+export default App;
