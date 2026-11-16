@@ -5,17 +5,17 @@ const Layout = () => {
     <>
       <header>
         <nav>
-          <ul>
-            <li>
+          <ul id='nav'>
+            <li class='nav-item'>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li class='nav-item'>
               <Link to="/profile">Profile</Link>
             </li>
-            <li>
+            <li class='nav-item'>
               <Link to="/upload">Upload</Link>
             </li>
-            <li>
+            <li class='nav-item'>
               <Link to='Demo'>Demo</Link>
             </li>
           </ul>

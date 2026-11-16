@@ -4,17 +4,17 @@ import { Link } from 'react-router';
 const MediaRow = (props) => {
   const {item, setItem} = props;
   return (
-    <tr key={item.media_id} onClick={() => setItem(item)}>
+    <tr className="media-row" key={item.media_id} onClick={() => setItem(item)}>
       <td>
         <img src={item.thumbnail} alt={item.title}></img>
       </td>
       <td>{item.title}</td>
       <td>{item.description}</td>
-      <td id="mediaDate">
+      <td className="media-date">
         {new Date(item.created_at).toLocaleString('fi-FI')}
       </td>
       <td>{item.filesize}</td>
-      <td id="mediaType">{item.media_type}</td>
+      <td className="media-type">{item.media_type}</td>
       <td>
         <button type="button" onClick={() => setItem(item)}>
           <Link to="/single" state={item}>

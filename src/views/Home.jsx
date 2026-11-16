@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import MediaRow from '../components/MediaRow.jsx';
-import MyComponent from '../components/MyComponent.jsx';
 import SingleView from '../components/SingleView.jsx';
 import { fetchData } from '../utils/fetchData.js';
 
@@ -26,8 +25,7 @@ const Home = () => {
  console.log(mediaArray);
   return (
     <>
-      <MyComponent />
-      <h2>My Media</h2>
+      <h2 id='mymediatitle'>My Media</h2>
       <table>
         <thead>
           <tr>

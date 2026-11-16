@@ -5,7 +5,7 @@ const Single = () => {
   const item = state;
   const navigate = useNavigate();
   return (
-    <>
+    <section className="single-view">
       {item.media_type.startsWith('image') ? (
         <img
           id="image"
@@ -20,9 +20,17 @@ const Single = () => {
         </video>
       )}
 
-      <p>{item.description ? item.description : 'No description'}</p>
-      <button id='backbutton' onClick={() => navigate(-1)}>Back</button>
-    </>
+      <p className="single-description">
+        {item.description ? item.description : 'No description'}
+      </p>
+      <button
+        className="single-back-button"
+        type="button"
+        onClick={() => navigate(-1)}
+      >
+        Back
+      </button>
+    </section>
   );
 };
 
