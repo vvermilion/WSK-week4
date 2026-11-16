@@ -30,5 +30,6 @@ MediaRow.propTypes = {
     created_at: PropTypes.string.isRequired,
   }).isRequired,
   setItem: PropTypes.func.isRequired,
-}
+};
+
 export default MediaRow;
