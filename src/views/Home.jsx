@@ -4,7 +4,7 @@ import MyComponent from '../components/MyComponent.jsx';
 import SingleView from '../components/SingleView.jsx';
 import { fetchData } from '../utils/fetchData.js';
 
-
+const MEDIA_API = import.meta.env.VITE_MEDIA_API;
 
 const Home = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
      const getMedia = async () => {
-       const json = await fetchData('test.json');
+       const json = await fetchData(MEDIA_API + '/media');
        setMediaArray(json);
      }; //lisää try/catch
      getMedia();

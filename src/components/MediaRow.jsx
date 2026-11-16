@@ -19,6 +19,7 @@ const MediaRow = (props) => {
         <Link to="/single" state={item}>
           Show
         </Link>
+        ADD BUTTON ABOVE
       </td>
     </tr>
   );

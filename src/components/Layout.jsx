@@ -16,7 +16,7 @@ const Layout = () => {
               <Link to="/upload">Upload</Link>
             </li>
             <li>
-              <Link to="/demo">Demo</Link>
+              <Link to='Demo'>Demo</Link>
             </li>
           </ul>
         </nav>
