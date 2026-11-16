@@ -17,6 +17,7 @@ const App = () => {
           <Route path="Upload" element={<Upload />} />
           <Route path="Single" element={<Single />} />
           <Route path='Demo' element={<Demo />} />
+          <Route path='Single' element={<Single />} />
           {/* TODO: add missing routes */}
         </Route>
       </Routes>

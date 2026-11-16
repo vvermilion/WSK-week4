@@ -16,10 +16,11 @@ const MediaRow = (props) => {
       <td>{item.filesize}</td>
       <td id="mediaType">{item.media_type}</td>
       <td>
-        <Link to="/single" state={item}>
-          Show
-        </Link>
-        ADD BUTTON ABOVE
+        <button type="button" onClick={() => setItem(item)}>
+          <Link to="/single" state={item}>
+            Show
+          </Link>
+        </button>
       </td>
     </tr>
   );

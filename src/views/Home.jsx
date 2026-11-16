@@ -13,9 +13,13 @@ const Home = () => {
 
   useEffect(() => {
      const getMedia = async () => {
-       const json = await fetchData(MEDIA_API + '/media');
-       setMediaArray(json);
-     }; //lisää try/catch
+         try {
+           const json = await fetchData(MEDIA_API + '/media');
+           setMediaArray(json);
+         } catch (error) {
+           console.error('Failed to fetch media:', error);
+         }
+     };
      getMedia();
    }, []);
 
