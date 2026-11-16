@@ -10,6 +10,7 @@ const MediaRow = (props) => {
       </td>
       <td>{item.title}</td>
       <td>{item.description}</td>
+      <td>{item.username}</td>
       <td className="media-date">
         {new Date(item.created_at).toLocaleString('fi-FI')}
       </td>
