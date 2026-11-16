@@ -9,16 +9,15 @@ import Demo from './views/Demo';
 
 const App = () => {
   return (
-    <BrowserRouter basename="/~maisali/wsk-routing">
+    <BrowserRouter basename="/~maisali/Web-kehitys-Syksy-2026/Viikko_4/wsk-react-app-week4">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="Profile" element={<Profile />} />
           <Route path="Upload" element={<Upload />} />
           <Route path="Single" element={<Single />} />
-          <Route path='Demo' element={<Demo />} />
-          <Route path='Single' element={<Single />} />
-          {/* TODO: add missing routes */}
+          <Route path="Demo" element={<Demo />} />
+          <Route path="Single" element={<Single />} />
         </Route>
       </Routes>
     </BrowserRouter>
